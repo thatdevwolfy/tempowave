@@ -6,7 +6,7 @@ const DiscordPage = () => {
   useEffect(() => {
     // Redirect to your Discord invite link after a delay (replace with your link)
     setTimeout(() => {
-      window.location.href = "YOUR_DISCORD_INVITE_LINK_HERE";
+      window.location.href = "https://discord.gg/weVrQ3sAJC";
     }, 3000); // 3000ms (3 seconds) delay before redirect
   }, []);
 
