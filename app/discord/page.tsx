@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react";
+"use client";
+// Import useState from "react/client" instead of "react"
+import { useEffect } from "react";
+import { useState } from "react/client";
 
 const DiscordPage = () => {
   const [dotVisible, setDotVisible] = useState(true);
