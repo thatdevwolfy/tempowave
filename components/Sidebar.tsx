@@ -37,7 +37,7 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
     },
     {
       icon: FaDiscord,
-      label: 'Search',
+      label: 'Discord',
       href: '/discord',
       active: pathname === '/discord'
         }
