@@ -67,11 +67,11 @@ const UploadModal = () => {
           cacheControl: '3600',
           upsert: false
         });
-
       if (songError) {
         setIsLoading(false);
         return toast.error('Failed song upload');
       }
+      toast.success("[Upload] Song Uploaded")
 
       // Upload image
       const { 
@@ -89,8 +89,7 @@ const UploadModal = () => {
         setIsLoading(false);
         return toast.error('Failed image upload');
       }
-
-      
+      toast.success("[Upload] Image Uploaded")
       // Create record 
       const { error: supabaseError } = await supabaseClient
         .from('songs')
@@ -105,10 +104,10 @@ const UploadModal = () => {
       if (supabaseError) {
         return toast.error(supabaseError.message);
       }
-      
+
       router.refresh();
       setIsLoading(false);
-      toast.success('Song created!');
+      toast.success('Uploaded Sucsesfully!');
       reset();
       uploadModal.onClose();
     } catch (error) {
@@ -120,8 +119,8 @@ const UploadModal = () => {
 
   return (
     <Modal
-      title="Add a song"
-      description="Upload an mp3 file"
+      title="Add a song to the library"
+      description="Upload your song"
       isOpen={uploadModal.isOpen}
       onChange={onChange}
     >
@@ -168,7 +167,7 @@ const UploadModal = () => {
           />
         </div>
         <Button disabled={isLoading} type="submit">
-          Create
+          Upload
         </Button>
       </form>
     </Modal>
