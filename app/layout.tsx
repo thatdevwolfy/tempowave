@@ -15,7 +15,7 @@ const font = Figtree({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'SpoLify',
-  description: 'Media Library',
+  description: 'SpoLify Media',
 }
 
 export const revalidate = 0;
