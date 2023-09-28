@@ -14,8 +14,8 @@ import './globals.css'
 const font = Figtree({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'SpoLify',
-  description: 'SpoLify Media',
+  title: 'TempoWave',
+  description: '',
 }
 
 export const revalidate = 0;
