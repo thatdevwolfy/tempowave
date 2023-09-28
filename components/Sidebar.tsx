@@ -40,7 +40,7 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
       label: 'Discord',
       href: '/discord',
       active: pathname === '/discord'
-        }
+    },
     {
       icon: FaGem,
       label: 'Status',
