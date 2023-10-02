@@ -14,9 +14,9 @@ import './globals.css'
 const font = Figtree({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'TempoWave',
+  title: 'TempoWave | Music With Passion',
   description: '',
-}
+};
 
 export const revalidate = 0;
 
