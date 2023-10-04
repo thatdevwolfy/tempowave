@@ -4,7 +4,7 @@ import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
-import { FaDiscord, FaExclamationCircle } from 'react-icons/fa';
+import { FaDiscord, FaGem } from 'react-icons/fa';
 import { Song } from "@/types";
 import usePlayer from "@/hooks/usePlayer";
 
