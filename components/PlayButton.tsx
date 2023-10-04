@@ -10,7 +10,7 @@ const PlayButton = () => {
         flex 
         items-center 
         justify-center 
-        bg-green-500 
+        bg-orange-500  // Change the background color class
         p-4 
         drop-shadow-md 
         translate
