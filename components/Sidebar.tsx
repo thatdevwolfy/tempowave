@@ -4,7 +4,7 @@ import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
-import { FaDiscord, FaGem } from 'react-icons/fa';
+import { FaDiscord, FaExclamationCircle } from 'react-icons/fa';
 import { Song } from "@/types";
 import usePlayer from "@/hooks/usePlayer";
 
@@ -44,8 +44,8 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
     {
       icon: FaGem,
       label: 'Status',
-      href: 'https://spotlify.betteruptime.com/',
-      active: pathname === 'https://spotlify.betteruptime.com/'
+      href: 'https://status.tempowave.xyz',
+      active: pathname === 'https://status.tempowave.xyz'
         }
   ], [pathname]);
 
