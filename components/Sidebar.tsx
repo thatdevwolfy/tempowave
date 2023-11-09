@@ -4,7 +4,7 @@ import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
-import { FaDiscord, FaGem } from 'react-icons/fa';
+import { FaDiscord, FaHeart } from 'react-icons/fa';
 import { Song } from "@/types";
 import usePlayer from "@/hooks/usePlayer";
 
@@ -36,17 +36,11 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
       active: pathname === '/search'
     },
     {
-      icon: FaDiscord,
-      label: 'Discord',
-      href: '/discord',
-      active: pathname === '/discord'
-    },
-    {
-      icon: FaGem,
-      label: 'Status',
-      href: 'https://status.tempowave.xyz',
-      active: pathname === 'https://status.tempowave.xyz'
-        }
+      icon: FaHeart,
+      label: 'Liked Songs',
+      href: '/liked',
+      active: pathname === '/liked'
+    }
   ], [pathname]);
 
   return (
