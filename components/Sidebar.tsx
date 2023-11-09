@@ -30,16 +30,16 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
       href: '/'
     },
     {
-      icon: BiSearch,
-      label: 'Search',
-      href: '/search',
-      active: pathname === '/search'
-    },
-    {
       icon: FaHeart,
       label: 'Liked Songs',
       href: '/liked',
       active: pathname === '/liked'
+    },
+    {
+      icon: BiSearch,
+      label: 'Search',
+      href: '/search',
+      active: pathname === '/search'
     }
   ], [pathname]);
 
